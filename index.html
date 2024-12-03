@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задания на JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Выбор напитка по времени суток</h1>
+    <p>Введите время суток (утро, день, вечер):</p>
+    <input type="text" id="timeOfDay" placeholder="Утро, День, Вечер">
+    <button onclick="chooseDrink()">Выбрать напиток</button>
+
+    <h2>Информация о пользователе</h2>
+    <p>Введите имя, возраст, предмет и оценку:</p>
+    <input type="text" id="name" placeholder="Имя">
+    <input type="number" id="age" placeholder="Возраст">
+    <input type="text" id="subject" placeholder="Предмет">
+    <input type="number" id="grade" placeholder="Оценка">
+    <button onclick="fillUserData()">Заполнить данные</button>
+
+    <h2>Список покупок</h2>
+    <p>Массив покупок:</p>
+    <ul id="shoppingList">
+        <li>яблоки</li>
+        <li>бананы</li>
+        <li>молоко</li>
+        <li>сыр</li>
+        <li>хлеб</li>
+        <li>шоколад</li>
+    </ul>
+    <button onclick="modifyShoppingList()">Изменить список</button>
+
+    <h2>Информация о фильмах</h2>
+    <p>Режиссер второго фильма: <span id="directorSecondFilm"></span></p>
+    <p>Жанр четвертого фильма: <span id="genreFourthFilm"></span></p>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
